@@ -240,7 +240,7 @@ hr {
         width: 100%;
     }
     .nav {
-        flex-direction: column;
+        /*flex-direction: column;*/
         width: 100%;
     }
     .nav-link {
@@ -248,7 +248,10 @@ hr {
         text-align: center;
     }
     .banner {
-        height: 300px; /* Ajusta la altura según sea necesario */
+        height: 100%; /* Ajusta la altura según sea necesario */
+    }
+    .banner-content{
+        margin: auto;
     }
     .banner-title {
         font-size: 2em; /* Ajusta el tamaño del título según sea necesario */
