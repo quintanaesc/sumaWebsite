@@ -1,3 +1,4 @@
+/* Estilos generales *//* Estilos generales */
 body {
     font-family: Arial, sans-serif;
 }
@@ -11,9 +12,15 @@ body {
     background-color: #000000;
 }
 .title {
-    font-weight: bold;
     display: flex;
+    align-items: center;
     height: 100px;
+}
+.title img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+    width: auto;
 }
 .nav-container {
     display: flex;
@@ -43,13 +50,13 @@ body {
 .nav-item a:hover {
     color: #ee0000; 
     border-radius: 5px; 
-    border-color:#ee0000 ;
+    border-color: #ee0000;
 }
 
-.nav-item.home a:hover {
+.nav-item.home a:hover img {
     content: url("../Imagenes/home2.png"); 
     border-radius: 5px; 
-    border-color:#ee0000 ;
+    border-color: #ee0000;
     width: 20px;
     height: 20px;
     margin-right: 5px;
@@ -178,21 +185,19 @@ hr {
 }
 /*end About*/
 
-
-/*foother*/
-
+/*footer*/
 .footer {
     position: absolute;
     left: .5%;
-    height:30px;
+    height: 30px;
     width: 99%;
-    background-color:#000000;
+    background-color: #000000;
 }
 .footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:#000000;
+    background-color: #000000;
 }
 .footer .company-info {
     text-align: right;
@@ -222,5 +227,52 @@ hr {
     width: 24px;
     height: 24px;
 }
+/*end footer*/
 
-/*end foother*/
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-container {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-link {
+        width: 100%;
+        text-align: center;
+    }
+    .banner {
+        height: 300px; /* Ajusta la altura según sea necesario */
+    }
+    .banner-title {
+        font-size: 2em; /* Ajusta el tamaño del título según sea necesario */
+    }
+    .banner-text {
+        font-size: 1em; /* Ajusta el tamaño del texto según sea necesario */
+        max-width: 90%;
+    }
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-content, .info-image {
+        max-width: 100%;
+    }
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .company-info {
+        text-align: center;
+        padding: 10px;
+    }
+    .footer .logo-social {
+        margin-bottom: 10px;
+    }
+}
