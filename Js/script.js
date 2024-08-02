@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Header
+    header();
+    about();
+    footer();
+});
+
+function header(){
     const headerContainer = document.getElementById("header-container");
     headerContainer.innerHTML = `
     <header class="header">
@@ -31,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function() {
                         <a href="#que-ofrecemos">Qué Ofrecemos</a>
                     </div>
                 </div>
+                <div class="nav-item">
+                    <a href="#articulos" class="nav-link">Articulos</a>
+                </div>
             </nav>
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Buscar...">
@@ -39,8 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </header>
     `;
+};
 
-    // About
+function about(){
     const aboutContainer = document.getElementById("about-container");
     aboutContainer.innerHTML = `
     <section id="home" class="banner">
@@ -138,8 +147,9 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </section>
     `;
+};
 
-    // Footer
+function footer(){
     const footerContainer = document.getElementById("footer-container");
     footerContainer.innerHTML = `
     <footer class="footer">
@@ -161,4 +171,6 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
     </footer>
     `;
-});
+};
+
+
