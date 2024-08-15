@@ -37,7 +37,7 @@ function header(){
                     </div>
                 </div>
                 <div class="nav-item">
-                    <a href="#articulos" class="nav-link">Articulos</a>
+                    <a href= "file:///C:/Users/2im3q/Desktop/suma/web/sumaWebsite/Articulos/Articulos.html" class="nav-link">Articulos</a>
                 </div>
             </nav>
             <div class="search-bar">
